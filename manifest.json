@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Escape Back Hotkey",
+  "version": "1.0",
+  "description": "Hotkeys for X (twitter)",
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "permissions": ["activeTab", "storage"]
+}
